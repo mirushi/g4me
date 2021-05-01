@@ -99,7 +99,7 @@ app.movieOverlay = {
     }).ready(function(){
       var video = this;
       var hasShowedBlob = false;
-      console.log("Script injected");
+      console.log("Script injected.");
       video.on('ended', function(e) {
           if( ended ){ ended(); }
 
@@ -142,8 +142,10 @@ app.movieOverlay = {
         olWrap.removeClass('show');
         blockScreen.removeClass('show');
       });
+
       return true;
     });
+
   }
 };
 
